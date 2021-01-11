@@ -120,7 +120,7 @@ az webapp log tail -n jose-flaskpipelines -g jose-udacity-project
 
 ## Enhancements
 
-In the future, the proyect can be configured to work with gitflow, sow if commit to particular branch, the code can continuos deploy to the corresponding environment (Develop, QA, Staging or production)
+In the future, the project can be configured to work with gitflow, so if you commit to a particular branch, the code can continue to be deployed in the corresponding environment (Development, QA, Staging or production).
 
 ## Demo 
 
