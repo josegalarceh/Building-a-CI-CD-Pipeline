@@ -13,7 +13,19 @@ It is critical to have an effective project plan and task tracking, In this sect
 
 ![screenshot-architectural-diagram.PNG](evidence/screenshot-architectural-diagram2.PNG)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+## Deploy the app in Azure Cloud Shell
+
+Go to the azure portal in your browser:
+```
+portal.azure.com
+```
+![portal azure](screenshots/screenshot-portal-azure.PNG) 
+In Azure Cloud Shell, clone the repo:
+```
+git clone git@github.com:josegalarceh/Building-a-CI-CD-Pipeline.git
+```
+![git clone](screenshots/screenshot-git-clone.PNG) 
+
 
 * Project running on Azure App Service
 
