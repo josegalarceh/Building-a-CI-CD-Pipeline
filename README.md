@@ -31,6 +31,17 @@ git clone git@github.com:josegalarceh/Building-a-CI-CD-Pipeline.git
 ```
 ![git clone](evidence/screenshot-git-clone.PNG) 
 
+Go to the repository directory:
+```
+cd Building-a-CI-CD-Pipeline
+```
+![go repo directory](evidence/screenshot-go-repo-directory.PNG)
+
+Setup virtual environment:
+```
+make setup
+```
+
 
 * Project running on Azure App Service
 
