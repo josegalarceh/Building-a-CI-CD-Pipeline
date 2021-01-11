@@ -71,49 +71,59 @@ cd Building-a-CI-CD-Pipeline
 ```
 ![local-prediction](evidence/screenshot-local-prediction.PNG)
 
+Close the second cloud console, and press "Ctrl + c" to stop the local app in the first console:
+
+![stop-app](evidence/screenshot-stop-app.PNG)
+
 ## Deploy the app to an Azure App Service
 Now is time to deploy the app to an azure app service...
 
-Create an App Service in Azure. In this example the App Service is called jose-flaskpipelines and the resource group is called jose-udacity-project:
+Create an App Service in Azure. In this example the App Service is called jose-flaskpipelines and the resource group is called jose-udacity-project. In the first Cloud Console run the follow command, the result take a few minutes:
 
 ```
 az webapp up -n jose-flaskpipelines -g jose-udacity-project
 ```
 ![create-webapp](evidence/screenshot-create-webapp.PNG)
 
+This is the webapp on the azure portal:
+![webapp](evidence/screenshot-webapp.PNG)
+
+Next, create and condigure the pipeline in Azure DevOps. More information on this process can be found [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops&WT.mc_id=udacity_learn-wwl). The basic steps to set up the pipeline are:
+
+- Go to [https://dev.azure.com](https://dev.azure.com) and sign in.
+- Create a new private project.
+- Under Project Settings create a new service connection to Azure Resource Manager, scoped to your subscription and resource group.
+- Create a new pipeline (python to linux web app on azure)linked to your GitHub repo.
 
 
-* Project running on Azure App Service
+![azure-pipeline](evidence/screenshot-azure-pipeline.PNG)
 
-* Project cloned into Azure Cloud Shell
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+Now, we can test the app. For you case, edit the line 28 of the make_predict_azure_app.sh script with the DNS name of your app. Then run the script on the cloud shell:
 
-* Output of a test run
-
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-
-* Running Azure App Service from Azure Pipelines automatic deployment
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
 ```
+./make_predict_azure_app.sh 
+```
+![webapp-prediction](evidence/screenshot-webapp-prediction.PNG)
 
-* Output of streamed log files from deployed application
 
-> 
+If you like, you can go to the webapp url:
+
+![webapp-url](evidence/screenshot-webapp-url.PNG)
+
+And view the logs with the following command:
+```
+az webapp log tail -n jose-flaskpipelines -g jose-udacity-project
+```
+![webapp-logs](evidence/screenshot-webapp-logs.PNG)
+
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+In the future, the proyect can be configured to work with gitflow, sow if commit to particular branch, the code can continuos deploy to the corresponding environment (Develop, QA, Staging or production)
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+This is the [youtube]() link to see a demo
 
 
