@@ -98,3 +98,22 @@ def subtract(x):
     return x - 1
 
 touch test_hello.py
+
+# 3. Local Test
+make all
+
+screenshot-shogwing-the-passing-test 
+
+# 1. Enable Github Actions
+
+hay que crear un workflow basico en action dentro del repo desde el portal
+
+# 2. Replace yml code
+
+mv .github/workflows/main.yml .github/workflows/pythonapp.yml
+Take screenshot and save it
+
+# Continuous Delivery on Azure
+
+clone the repo
+reemplace the files
