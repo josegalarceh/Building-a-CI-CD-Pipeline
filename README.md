@@ -19,12 +19,12 @@ Go to the azure portal in your browser:
 ```
 portal.azure.com
 ```
-![portal azure](screenshots/screenshot-portal-azure.PNG) 
+![screenshot-portal-azure.PNG](screenshots/screenshot-portal-azure.PNG) 
 In Azure Cloud Shell, clone the repo:
 ```
 git clone git@github.com:josegalarceh/Building-a-CI-CD-Pipeline.git
 ```
-![git clone](screenshots/screenshot-git-clone.PNG) 
+![screenshot-git-clone.PNG](screenshots/screenshot-git-clone.PNG) 
 
 
 * Project running on Azure App Service
