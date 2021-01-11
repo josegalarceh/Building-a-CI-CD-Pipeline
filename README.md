@@ -7,12 +7,11 @@ In this project, you will build a Github repository from scratch and create a sc
 It is critical to have an effective project plan and task tracking, In this section you find:
 
 * A [Trello](https://trello.com/b/7QrYdgzR/udacity-building-a-ci-cd-pipeline) board for the project
-* A [spreadsheet]() that includes the original and final project plan
+* A [spreadsheet](https://github.com/josegalarceh/Building-a-CI-CD-Pipeline/blob/main/Udacity-Building-a-CI-CD-Pipeline-Q1-2021.xlsx) that includes the original and final project plan
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+![screenshot-architectural-diagram.PNG](evidence/screenshot-architectural-diagram.PNG)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
