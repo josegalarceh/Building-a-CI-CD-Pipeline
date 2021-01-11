@@ -41,7 +41,25 @@ Setup virtual environment:
 ```
 make setup
 ```
+![make setup](evidence/screenshot-make-setup.PNG)
 
+Activate the virtual environment:
+```
+source ~/.Building-a-CI-CD-Pipeline/bin/activate
+```
+![source](evidence/screenshot-source.PNG)
+
+Install dependencies and run lint in the virtual environment:
+```
+make all
+```
+![make all](evidence/screenshot-make-all.PNG)
+
+In order to validate the application before deploy to app service, start the application in the virtual environment:
+```
+python app.py
+```
+![python-app](evidence/screenshot-python-app.PNG)
 
 * Project running on Azure App Service
 
