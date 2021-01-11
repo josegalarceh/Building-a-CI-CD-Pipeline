@@ -19,7 +19,12 @@ Go to the azure portal in your browser:
 ```
 portal.azure.com
 ```
-![portal azure](evidence/screenshot-portal-azure2.PNG) 
+![portal azure](evidence/screenshot-portal-azure3.PNG) 
+
+In the Azure Portal, select Azure Cloud Shell:
+
+![Cloud Shell](evidence/screenshot-cloud-shell.PNG) 
+
 In Azure Cloud Shell, clone the repo:
 ```
 git clone git@github.com:josegalarceh/Building-a-CI-CD-Pipeline.git
