@@ -117,3 +117,7 @@ Take screenshot and save it
 
 clone the repo
 reemplace the files
+ojo con los archivos del requirement.txt
+agregar:
+    pylint
+    pytest
