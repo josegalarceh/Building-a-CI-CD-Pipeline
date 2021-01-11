@@ -11,7 +11,7 @@ It is critical to have an effective project plan and task tracking, In this sect
 
 ## Instructions
 
-![screenshot-architectural-diagram.PNG](evidence/screenshot-architectural-diagram.PNG)
+![screenshot-architectural-diagram.PNG](evidence/screenshot-architectural-diagram2.PNG)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
