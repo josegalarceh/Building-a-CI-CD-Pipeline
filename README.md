@@ -61,6 +61,28 @@ python app.py
 ```
 ![python-app](evidence/screenshot-python-app.PNG)
 
+Open other Cloud Shell:
+![new-cloud-shell](evidence/screenshot-new-cloud-shell.PNG)
+
+In the new Cloud Shell, go to the repository directory and test that the app is working:
+```
+cd Building-a-CI-CD-Pipeline
+./make_prediction.sh
+```
+![local-prediction](evidence/screenshot-local-prediction.PNG)
+
+## Deploy the app to an Azure App Service
+Now is time to deploy the app to an azure app service...
+
+Create an App Service in Azure. In this example the App Service is called jose-flaskpipelines and the resource group is called jose-udacity-project:
+
+```
+az webapp up -n jose-flaskpipelines -g jose-udacity-project
+```
+![create-webapp](evidence/screenshot-create-webapp.PNG)
+
+
+
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell
