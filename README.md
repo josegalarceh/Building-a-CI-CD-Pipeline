@@ -1,4 +1,4 @@
-![Python application test with Github Actions](https://github.com/josegalarceh/Building-a-CI-CD-Pipeline/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
+![Python application test with Github Actions](https://github.com/josegalarceh/Building-a-CI-CD-Pipeline/workflows/Python+application+test+with+Github+Actions/badge.svg)
 # Overview
 
 In this project, you will build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
@@ -91,7 +91,7 @@ az webapp up -n jose-flaskpipelines -g jose-udacity-project
 This is the webapp on the azure portal:
 ![webapp](evidence/screenshot-webapp.PNG)
 
-Next, create and condigure the pipeline in Azure DevOps. More information on this process can be found [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops&WT.mc_id=udacity_learn-wwl). The basic steps to set up the pipeline are:
+Next, create and configure the pipeline in Azure DevOps. More information on this process can be found [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops&WT.mc_id=udacity_learn-wwl). The basic steps to set up the pipeline are:
 
 - Go to [https://dev.azure.com](https://dev.azure.com) and sign in.
 - Create a new private project.
