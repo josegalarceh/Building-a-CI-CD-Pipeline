@@ -1,4 +1,4 @@
-![Python application test with Github Actions](https://github.com/josegalarceh/Building-a-CI-CD-Pipeline/workflows/Python+application+test+with+Github+Actions/badge.svg)
+![Python application test with Github Actions](https://github.com/josegalarceh/Building-a-CI-CD-Pipeline/workflows/.github/workflows/pythonapp.yml/badge.svg)
 
 # Overview
 
