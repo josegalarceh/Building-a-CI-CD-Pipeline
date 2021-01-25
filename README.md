@@ -121,6 +121,23 @@ az webapp log tail -n jose-flaskpipelines -g jose-udacity-project
 ```
 ![webapp-logs](evidence/screenshot-webapp-logs.PNG)
 
+## Load Test
+
+We can use locust to do a load test against our application. In this example we will do a load test against the app running in azure rather than locally.
+
+Install locust and then run locust:
+```
+pip install locust
+locust
+```
+![locust](evidence/screenshot-install-locust.PNG)
+
+Open a browser and go to http://localhost:8089. Enter the total number of users to simulate, spawn rate, set the host to https://jose-flaskpipelines.azurewebsites.net/, and click Start Swarming:
+
+![locust](evidence/screenshot-locust-a.PNG)
+
+![locust](evidence/evidence-screenshot-showing-locust-test.PNG)
+
 ## Extra-Screenshots
 
 You can see screenshot of a successful GitHub build test run, at github actions:
